@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:widgets": "ng build --prod --output-hashing none && cat dist/microfront-a/runtime.js dist/microfront-a/polyfills.js dist/microfront-a/main.js > dist/widgets.js"
   },
   "private": true,
   "dependencies": {
