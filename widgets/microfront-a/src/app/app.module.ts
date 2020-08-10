@@ -8,5 +8,7 @@ import { NgModule, Injector } from '@angular/core';
   bootstrap: [],
 })
 export class AppModule {
-  constructor() {}
+  constructor(private injector: Injector) {}
+
+  ngDoBootstrap() {}
 }
