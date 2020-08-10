@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector } from '@angular/core';
+import { HelloWorldWidgetComponent } from './hello-world-widget/hello-world-widget.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [HelloWorldWidgetComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [],
