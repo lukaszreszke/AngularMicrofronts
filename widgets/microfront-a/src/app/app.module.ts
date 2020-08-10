@@ -17,5 +17,6 @@ export class AppModule {
     const helloWorldWidget = createCustomElement(HelloWorldWidgetComponent, {
       injector: this.injector,
     });
+    customElements.define('widgets-hello-world', helloWorldWidget);
   }
 }
