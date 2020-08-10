@@ -7,9 +7,14 @@ import { HelloWorldWidgetComponent } from './hello-world-widget/hello-world-widg
   imports: [BrowserModule],
   providers: [],
   bootstrap: [],
+  entryComponents: [HelloWorldWidgetComponent],
 })
 export class AppModule {
   constructor(private injector: Injector) {}
 
-  ngDoBootstrap() {}
+  ngDoBootstrap() {
+    const helloWorldWidget = createCustomElement(HelloWorldWidgetComponent, {
+      injector: this.injector,
+    });
+  }
 }
